@@ -13,6 +13,11 @@
 		37B8A83924BE1A6400ECF7D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B8A83824BE1A6400ECF7D0 /* Preview Assets.xcassets */; };
 		37B8A84424BE1A6400ECF7D0 /* Terapify_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B8A84324BE1A6400ECF7D0 /* Terapify_DemoTests.swift */; };
 		37B8A84F24BE1A6500ECF7D0 /* Terapify_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B8A84E24BE1A6500ECF7D0 /* Terapify_DemoUITests.swift */; };
+		37B8A86324BE1C1000ECF7D0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B8A86224BE1C1000ECF7D0 /* WidgetKit.framework */; };
+		37B8A86524BE1C1000ECF7D0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B8A86424BE1C1000ECF7D0 /* SwiftUI.framework */; };
+		37B8A86824BE1C1000ECF7D0 /* Terapify_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B8A86724BE1C1000ECF7D0 /* Terapify_Widget.swift */; };
+		37B8A86A24BE1C1100ECF7D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B8A86924BE1C1100ECF7D0 /* Assets.xcassets */; };
+		37B8A86E24BE1C1100ECF7D0 /* Terapify WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 37B8A86024BE1C1000ECF7D0 /* Terapify WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +35,28 @@
 			remoteGlobalIDString = 37B8A82D24BE1A6300ECF7D0;
 			remoteInfo = "Terapify Demo";
 		};
+		37B8A86C24BE1C1100ECF7D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37B8A82624BE1A6300ECF7D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37B8A85F24BE1C1000ECF7D0;
+			remoteInfo = "Terapify WidgetExtension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		37B8A87224BE1C1100ECF7D0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				37B8A86E24BE1C1100ECF7D0 /* Terapify WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		37B8A82E24BE1A6300ECF7D0 /* Terapify Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Terapify Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +71,12 @@
 		37B8A84A24BE1A6500ECF7D0 /* Terapify DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Terapify DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B8A84E24BE1A6500ECF7D0 /* Terapify_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terapify_DemoUITests.swift; sourceTree = "<group>"; };
 		37B8A85024BE1A6500ECF7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37B8A86024BE1C1000ECF7D0 /* Terapify WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Terapify WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37B8A86224BE1C1000ECF7D0 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		37B8A86424BE1C1000ECF7D0 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		37B8A86724BE1C1000ECF7D0 /* Terapify_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terapify_Widget.swift; sourceTree = "<group>"; };
+		37B8A86924BE1C1100ECF7D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37B8A86B24BE1C1100ECF7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +101,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37B8A85D24BE1C1000ECF7D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B8A86524BE1C1000ECF7D0 /* SwiftUI.framework in Frameworks */,
+				37B8A86324BE1C1000ECF7D0 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +119,8 @@
 				37B8A83024BE1A6300ECF7D0 /* Terapify Demo */,
 				37B8A84224BE1A6400ECF7D0 /* Terapify DemoTests */,
 				37B8A84D24BE1A6500ECF7D0 /* Terapify DemoUITests */,
+				37B8A86624BE1C1000ECF7D0 /* Terapify Widget */,
+				37B8A86124BE1C1000ECF7D0 /* Frameworks */,
 				37B8A82F24BE1A6300ECF7D0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +131,7 @@
 				37B8A82E24BE1A6300ECF7D0 /* Terapify Demo.app */,
 				37B8A83F24BE1A6400ECF7D0 /* Terapify DemoTests.xctest */,
 				37B8A84A24BE1A6500ECF7D0 /* Terapify DemoUITests.xctest */,
+				37B8A86024BE1C1000ECF7D0 /* Terapify WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +174,25 @@
 			path = "Terapify DemoUITests";
 			sourceTree = "<group>";
 		};
+		37B8A86124BE1C1000ECF7D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37B8A86224BE1C1000ECF7D0 /* WidgetKit.framework */,
+				37B8A86424BE1C1000ECF7D0 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37B8A86624BE1C1000ECF7D0 /* Terapify Widget */ = {
+			isa = PBXGroup;
+			children = (
+				37B8A86724BE1C1000ECF7D0 /* Terapify_Widget.swift */,
+				37B8A86924BE1C1100ECF7D0 /* Assets.xcassets */,
+				37B8A86B24BE1C1100ECF7D0 /* Info.plist */,
+			);
+			path = "Terapify Widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,10 +203,12 @@
 				37B8A82A24BE1A6300ECF7D0 /* Sources */,
 				37B8A82B24BE1A6300ECF7D0 /* Frameworks */,
 				37B8A82C24BE1A6300ECF7D0 /* Resources */,
+				37B8A87224BE1C1100ECF7D0 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				37B8A86D24BE1C1100ECF7D0 /* PBXTargetDependency */,
 			);
 			name = "Terapify Demo";
 			productName = "Terapify Demo";
@@ -186,6 +251,23 @@
 			productReference = 37B8A84A24BE1A6500ECF7D0 /* Terapify DemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		37B8A85F24BE1C1000ECF7D0 /* Terapify WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37B8A86F24BE1C1100ECF7D0 /* Build configuration list for PBXNativeTarget "Terapify WidgetExtension" */;
+			buildPhases = (
+				37B8A85C24BE1C1000ECF7D0 /* Sources */,
+				37B8A85D24BE1C1000ECF7D0 /* Frameworks */,
+				37B8A85E24BE1C1000ECF7D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Terapify WidgetExtension";
+			productName = "Terapify WidgetExtension";
+			productReference = 37B8A86024BE1C1000ECF7D0 /* Terapify WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +288,9 @@
 						CreatedOnToolsVersion = 12.0;
 						TestTargetID = 37B8A82D24BE1A6300ECF7D0;
 					};
+					37B8A85F24BE1C1000ECF7D0 = {
+						CreatedOnToolsVersion = 12.0;
+					};
 				};
 			};
 			buildConfigurationList = 37B8A82924BE1A6300ECF7D0 /* Build configuration list for PBXProject "Terapify Demo" */;
@@ -224,6 +309,7 @@
 				37B8A82D24BE1A6300ECF7D0 /* Terapify Demo */,
 				37B8A83E24BE1A6400ECF7D0 /* Terapify DemoTests */,
 				37B8A84924BE1A6500ECF7D0 /* Terapify DemoUITests */,
+				37B8A85F24BE1C1000ECF7D0 /* Terapify WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +335,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37B8A85E24BE1C1000ECF7D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B8A86A24BE1C1100ECF7D0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +374,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37B8A85C24BE1C1000ECF7D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B8A86824BE1C1000ECF7D0 /* Terapify_Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +394,11 @@
 			isa = PBXTargetDependency;
 			target = 37B8A82D24BE1A6300ECF7D0 /* Terapify Demo */;
 			targetProxy = 37B8A84B24BE1A6500ECF7D0 /* PBXContainerItemProxy */;
+		};
+		37B8A86D24BE1C1100ECF7D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37B8A85F24BE1C1000ECF7D0 /* Terapify WidgetExtension */;
+			targetProxy = 37B8A86C24BE1C1100ECF7D0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -415,6 +522,7 @@
 		37B8A85424BE1A6500ECF7D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -437,6 +545,7 @@
 		37B8A85524BE1A6500ECF7D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +649,48 @@
 			};
 			name = Release;
 		};
+		37B8A87024BE1C1100ECF7D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D5DZX4N5C6;
+				INFOPLIST_FILE = "Terapify Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicolasr.Terapify-Demo.Terapify-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		37B8A87124BE1C1100ECF7D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D5DZX4N5C6;
+				INFOPLIST_FILE = "Terapify Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicolasr.Terapify-Demo.Terapify-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,6 +726,15 @@
 			buildConfigurations = (
 				37B8A85A24BE1A6500ECF7D0 /* Debug */,
 				37B8A85B24BE1A6500ECF7D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37B8A86F24BE1C1100ECF7D0 /* Build configuration list for PBXNativeTarget "Terapify WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37B8A87024BE1C1100ECF7D0 /* Debug */,
+				37B8A87124BE1C1100ECF7D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
